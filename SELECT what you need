@@ -1,0 +1,11 @@
+SELECT *
+FROM Earthquakes;
+
+SELECT Latitude, -- Y location coordinate column
+       Longitude, -- X location coordinate column
+	   Magnitude, -- Earthquake strength column
+	   Depth, -- Earthquake depth column
+	   NearestPop -- Nearest city column
+FROM Earthquakes
+WHERE Country = 'PG' -- Papua New Guinea country code
+	OR Country = 'ID'; -- Indonesia country code
