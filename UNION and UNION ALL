@@ -1,0 +1,20 @@
+SELECT CityName AS NearCityName, -- City name column
+	   CountryCode
+FROM Cities
+
+UNION -- Append queries
+
+SELECT Capital AS NearCityName, -- Nation capital column
+       Code2 AS CountryCode
+FROM Nations;
+
+
+SELECT CityName AS NearCityName,
+	   CountryCode
+FROM Cities
+
+UNION ALL -- Append queries
+
+SELECT Capital AS NearCityName,
+       Code2 AS CountryCode  -- Country code column
+FROM Nations;
